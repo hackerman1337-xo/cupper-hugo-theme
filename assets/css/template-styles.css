@@ -242,7 +242,6 @@ label {
   border-radius: 0.33em;
   color: #fefefe;
   padding: 0.25em 0.75em;
-  margin: 0.5rem;
 }
 [for="themer"] [aria-hidden]::before {
   content: 'off';
@@ -894,6 +893,11 @@ h1 svg {
 @media screen and (max-width: 45em) {
     body a {
       hyphens: auto;
+    }
+    [for="themer"] {
+        padding: 0.75em;
+        text-align: center;
+        width: 50%;
     }
     [role="banner"] {
         position: static;
