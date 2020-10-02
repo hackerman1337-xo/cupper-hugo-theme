@@ -6,7 +6,11 @@
         href="{{ .Site.BaseURL }}"
         aria-label="{{ .Site.Title }} home page"
       >
-        <img src="{{ "images/logo.svg" | absURL }}" alt="">
+        <picture>
+          <source srcset="{{ "images/logo.webp" | absURL }}" type="image/webp">
+          <source srcset="{{ "images/logo.png" | absURL }}" type="image/png">
+          <img src="{{ "images/logo.png" | absURL }}" alt="hm37.net" />
+        </picture>  
       </a>
       <div style="margin-top:0;">
         <label for="themer">
